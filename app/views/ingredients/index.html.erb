@@ -1,0 +1,13 @@
+<h2>Welcome to the list of your ingredients</h2>
+
+<div class="container">
+  <div class="row">
+    <% @ingredients.each do |ingredient| %>
+      <div class="ingredient.card col-4">
+        <p>
+          <%= ingredient.name %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>
